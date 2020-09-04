@@ -106,7 +106,7 @@ for i in 0 1 2; do
     --can-ip-forward \
     --image-family ubuntu-2004-lts \
     --image-project ubuntu-os-cloud \
-    --machine-type e2-standard-2 \
+    --machine-type n1-standard-1 \
     --private-network-ip 10.240.0.1${i} \
     --scopes compute-rw,storage-ro,service-management,service-control,logging-write,monitoring \
     --subnet kubernetes \
@@ -131,7 +131,7 @@ for i in 0 1 2; do
     --can-ip-forward \
     --image-family ubuntu-2004-lts \
     --image-project ubuntu-os-cloud \
-    --machine-type e2-standard-2 \
+    --machine-type n1-standard-1 \
     --metadata pod-cidr=10.200.${i}.0/24 \
     --private-network-ip 10.240.0.2${i} \
     --scopes compute-rw,storage-ro,service-management,service-control,logging-write,monitoring \
