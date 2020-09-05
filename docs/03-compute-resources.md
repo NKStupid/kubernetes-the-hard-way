@@ -110,7 +110,6 @@ for i in 0 1 2; do
     --private-network-ip 10.240.0.1${i} \
     --scopes compute-rw,storage-ro,service-management,service-control,logging-write,monitoring \
     --subnet kubernetes \
-    --no-address \
     --tags kubernetes-the-hard-way,controller
 done
 ```
