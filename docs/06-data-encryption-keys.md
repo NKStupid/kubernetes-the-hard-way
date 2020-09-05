@@ -36,7 +36,7 @@ Copy the `encryption-config.yaml` encryption config file to each controller inst
 
 ```
 for instance in controller-0 controller-1 controller-2; do
-  gcloud compute scp encryption-config.yaml etcd-v3.4.10-linux-amd64.tar.gz ${instance}:~/
+  gcloud compute scp encryption-config.yaml ${instance}:~/
 done
 ```
 
